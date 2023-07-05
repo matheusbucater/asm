@@ -20,7 +20,7 @@ M=D
 0;JMP
 (RETFUNx2)
 // fim do else body(2)
-@ENDIF2
+@ENDIF
 0;JMP
 
 (IF2)
@@ -30,10 +30,9 @@ M=D
   @R3
   M=0
   // fim do if body (2)
-(ENDIF2)
 // fim do if block (2)
 // fim do else body (1)
-@ENDIF1
+@ENDIF
 0;JMP
 
 (IF1)
@@ -46,7 +45,7 @@ M=D
   0;JMP
   (RETFUNx1)
   // fim do if body (1)
-(ENDIF1)
+(ENDIF)
 // fim do if block (1)
 
 (END)
@@ -76,7 +75,7 @@ M=D
   0;JMP
   (RETFUNx4)
   // fim do else body (4)
-  @ENDIF4
+  @ENDIF2
   0;JMP
 
   (IF4)
@@ -111,7 +110,7 @@ M=D
     @R3
     M=D-M
     // fim do else body (5)
-    @ENDIF5
+    @ENDIF2
     0;JMP
 
     (IF5)
@@ -119,13 +118,13 @@ M=D
       @R2
       M=-M
       // fim do if body (5)
-    (ENDIF5)
+
     // fim do if block(5)
     // fim do if body (4)
-  (ENDIF4)
+  
   // fim do if block (4)
   // fim do else body (3)
-  @ENDIF3
+  @ENDIF2
   0;JMP
 
   (IF3)
@@ -146,7 +145,7 @@ M=D
     @R2
     M=-M
     // fim do if body (3)
-  (ENDIF3)
+  (ENDIF2)
   // fim do if block (3)
 
 (DIVU)
